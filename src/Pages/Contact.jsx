@@ -1,13 +1,12 @@
 import React, { useState } from 'react';
 import { FaToggleOff, FaToggleOn } from 'react-icons/fa';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { ReactComponent as ContactImg } from '../assets/contact.svg';
 
 const Contact = ({ showContactHandler }) => {
   const [email, setEmail] = useState(true);
   const [wa, setWa] = useState(false);
   const [formData, setFormData] = useState('');
-  const navigate = useNavigate();
 
   return (
     <div className='py-6 px-4 h-screen bg-neutral-200 flex flex-col'>

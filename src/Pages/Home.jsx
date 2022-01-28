@@ -55,7 +55,7 @@ const Home = () => {
                 <FaLinkedin className='hover:text-neutral-800 text-4xl' />
               </a>
               <a
-                href='https://www.linkedin.com/in/althafdaa/'
+                href='https://drive.google.com/file/d/1L-n3hK2jMsPIahOrj38JsiS9DufRZjOj/view?usp=sharing'
                 target='_blank'
                 rel='noreferrer'
               >

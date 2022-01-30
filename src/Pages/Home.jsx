@@ -18,8 +18,6 @@ const Home = () => {
         id='home'
         className='py-6 px-4 h-screen flex flex-col relative justify-center'
       >
-        {/* <Navbar showContactHandler={showContactHandler} /> */}
-
         <AnimatePresence>
           {' '}
           <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
@@ -31,7 +29,7 @@ const Home = () => {
               </div>
 
               <img
-                className='rounded-full w-36 h-36 self-center order-1 md:order-2 lg:order-2 shadow-md'
+                className='rounded-full object-cover object-top w-36 h-36 self-center order-1 md:order-2 lg:order-2 shadow-md'
                 src={ProfilePic}
                 alt='profile pic'
               />

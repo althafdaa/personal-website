@@ -89,7 +89,7 @@ const Projects = () => {
                     properties.
                   </p>
                   <p className='text-sm my-2'>
-                    Tech Stack: ReactJs, TailwindCss, Firebase
+                    Tech Stack: ReactJs, Redux, TailwindCss, Firebase
                   </p>
                   <div>
                     <a

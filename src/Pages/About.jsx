@@ -6,6 +6,7 @@ import { ReactComponent as ReactIcon } from '../assets/react.svg';
 import { ReactComponent as TwIcon } from '../assets/tailwind.svg';
 import { ReactComponent as GitIcon } from '../assets/git.svg';
 import { ReactComponent as FbIcon } from '../assets/firebase.svg';
+import { ReactComponent as ReduxIcon } from '../assets/redux.svg';
 import { FaBootstrap } from 'react-icons/fa';
 
 const About = () => {
@@ -14,6 +15,7 @@ const About = () => {
   const [cssOver, setcssOver] = useState(false);
   const [jsOver, setjsOver] = useState(false);
   const [reactOver, setreactOver] = useState(false);
+  const [reduxOver, setreduxOver] = useState(false);
   const [bootstrapOver, setbootstrapOver] = useState(false);
   const [tailwindOver, settailwindOver] = useState(false);
   const [gitOver, setgitOver] = useState(false);
@@ -39,7 +41,7 @@ const About = () => {
       </header>
       <main>
         <h2 className='text-2xl font-semibold'>Languages and Technologies</h2>
-        <div className='grid grid-cols-3 gap-y-8 mt-4 py-4 rounded-lg border-b-8 border-neutral-400'>
+        <div className='grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-y-8 mt-4 py-4 rounded-lg border-b-8 border-neutral-400'>
           {' '}
           <div className='flex flex-col items-center cursor-pointer relative'>
             <HtmlIcon
@@ -86,6 +88,18 @@ const About = () => {
             {reactOver && (
               <p className='bg-neutral-400 inline-block px-2 text-white mb-2 rounded-lg shadow font-semibold absolute -bottom-10'>
                 ReactJS
+              </p>
+            )}
+          </div>
+          <div className='flex flex-col items-center cursor-pointer relative'>
+            <ReduxIcon
+              className='w-24 h-24 hover:scale-95 hover:opacity-75 duration-500 '
+              onMouseEnter={() => setreduxOver(true)}
+              onMouseLeave={() => setreduxOver(false)}
+            />
+            {reduxOver && (
+              <p className='bg-neutral-400 inline-block px-2 text-white mb-2 rounded-lg shadow font-semibold absolute -bottom-10'>
+                Redux
               </p>
             )}
           </div>
